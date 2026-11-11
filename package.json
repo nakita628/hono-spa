@@ -1,0 +1,21 @@
+{
+  "name": "hono-spa",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --port 8787",
+    "build": "vite build --mode client && vite build",
+    "start": "node dist/index.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "hono": "^4.13.17"
+  },
+  "devDependencies": {
+    "@hono/node-server": "^2.1.6",
+    "@hono/vite-build": "^1.11.1",
+    "@hono/vite-dev-server": "^0.26.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7"
+  }
+}
